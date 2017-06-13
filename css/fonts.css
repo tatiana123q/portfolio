@@ -1,0 +1,17 @@
+/*@font-face {
+	font-family: "Little-Mandy-v2";
+	src: url("../fonts/Little-Mandy-v2/Little Mandy.eot");
+	src: url("../fonts/Little-Mandy-v2/Little Mandy.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Little-Mandy-v2/Little Mandy.woff")format("woff"),
+	url("../fonts/Little-Mandy-v2/Little Mandy.ttf")format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}*/
+@font-face {
+	font-family: "Cornera-Regular";
+	src: url("../fonts/Cornera-Regular/Cornera-Regular.eot");
+	src: url("../fonts/Cornera-Regular/Cornera-Regular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Cornera-Regular/Cornera-Regular.woff")format("woff");
+	font-style: normal;
+	font-weight: normal;
+}
