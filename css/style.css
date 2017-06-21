@@ -6,7 +6,7 @@
 .wrapper{
 	font-family: "Cornera-Regular", sans-serif;
 	background: url(../img/background2.png) 100% 100% no-repeat,
-	url(../img/background.jpeg) 100% 100% no-repeat;
+	url(../img/background.png) 100% 100% no-repeat;
     background-size: cover;
     height: 100vh;
     opacity: 0.9;
