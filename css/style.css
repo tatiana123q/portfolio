@@ -4,6 +4,8 @@
 }
 
 .wrapper{
+    position: relative;
+    font-size: 16px;
 	font-family: "Cornera-Regular", sans-serif;
 	background: url(../img/background2.png) 100% 100% no-repeat,
 	url(../img/background.png) 100% 100% no-repeat;
@@ -11,21 +13,28 @@
     height: 100vh;
     opacity: 0.9;
 }
-header{
-	margin: 0 15% 0 15%;
+
+.s1{
+	position: absolute;
+	width: 100%;
 }
+
 .logo{
 	color: #e0e9f0;
 	float: left;
 	margin-top: 30px;
+	margin-left: 15%;
 }
 
 
 nav{
+	margin-right: 15%;
 	clear:right;
 	float: right;
 	margin-top: 30px;
+
 }
+
  li{
 	display: inline-block;
 	padding-right: 20px;
@@ -33,3 +42,16 @@ nav{
  a {text-decoration: none;
  	color: #e0e9f0;}
  
+ /*   SLADES   */
+.s2{
+	position: absolute;
+	top: 25%;
+}
+.slydes{
+	max-width: 50%;
+	
+}
+
+.prev, .next {
+	
+}
