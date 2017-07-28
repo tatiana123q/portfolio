@@ -3,6 +3,8 @@
 	padding: 0;
 }
 
+/*    LOGO   */
+
 .wrapper{
     position: relative;
     font-size: 16px;
@@ -39,6 +41,9 @@ nav{
 	display: inline-block;
 	padding-right: 20px;
  }
+ li:hover{
+
+ }
  a {text-decoration: none;
  	color: #e0e9f0;}
  
@@ -46,12 +51,48 @@ nav{
 .s2{
 	position: absolute;
 	top: 25%;
+	width: 100%;
 }
-.slydes{
-	max-width: 50%;
+#slydes{
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+.mySlydes{
+	position: absolute;
 	
+width: 100%;
+height: 100%;
+opacity: 0.3;
+z-index: 1;
+-webkit-transition: opacity 1s;
+-moz-transition: opacity 1s;
+-o-transition: opacity 1s;
+transition: opacity 1s;
+}
+.showing {
+opacity: 1;
+z-index: 2;
+
 }
 
 .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	    background-color: transparent;
+    border: 0px;
 	
+}
+
+.prev{
+	left: 100px;
+}
+.next{
+	right: 100px;
+}
+.prev:hover{
+	opacity: 0.55;
+}
+.next:hover{
+	opacity: 0.55;
 }
