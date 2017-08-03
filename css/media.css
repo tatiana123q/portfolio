@@ -133,4 +133,10 @@
 
  /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+	.about_us{
+		margin: 2% 10% 2% 10%;
+	}
+	.inf{
+		margin: 0 15% 0 15%;
+	}
 }

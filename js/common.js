@@ -31,10 +31,21 @@ function showSlides(n){
 	 dots[slideIndex-1].className+= " active";
 }
 
+
 $(document).ready(function() {
 
 $(".menu_button").click( function(){
 			$(".main_nav ul").slideToggle();
+		});
+$(".couple_but").click( function(){
+
+			$(".coup").slideToggle();
+		});
+$(".get_married_but").click( function(){
+			$(".get_marr").slideToggle();
+		});
+$(".groups_but").click( function(){
+			$(".group").slideToggle();
 		});
 	
 

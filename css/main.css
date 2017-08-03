@@ -32,7 +32,8 @@ body {
 	background: url(../img/background.png) 100% 100%;
 	width: 100%;
 	max-height: 700px;
-	background-size: cover;	
+	background-size: cover;
+
 }
 .wrapper{
 	background: rgba(96, 84, 119, 0.51);
@@ -67,13 +68,18 @@ body {
 	padding: 0px;
 
 }
+nav ul li a:hover{
+	opacity: 0.7;
+}
 .main_nav ul li{
 	display: inline-block;
+	cursor: pointer;
 }
 .main_nav a{
 	padding-left: 40px;
 	font-size: 18px;
 	color: #f2f2f2;	
+	cursor: pointer;
 	
 }
 .menu_button{
@@ -128,6 +134,7 @@ body {
 	padding: 10px;
 	border: 2px #f2f2f2 ridge;
 	box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+	cursor: pointer;
 }
 
 .dot{
@@ -182,11 +189,19 @@ body {
 	
 
 }
+.video:hover,.photo:hover,.album:hover{
+	border: 4px #86727b solid;
+	-webkit-transform:scale(1.05); /*Webkit: увеличиваем размер до 1.2x*/
+	-moz-transform:scale(1.05); /*Mozilla: масштабирование*/
+	-o-transform:scale(1.05);
+}
+
+
 .border_icon{
 	position: absolute;
 	
 }
-section .fa{
+.myServices .fa{
 	font-size: 27px;
 	color: #86727b;
 	background: white;
@@ -198,8 +213,11 @@ section .fa{
 section h2{
 	color: #6f5f66;
 	letter-spacing: 3px;
+	text-align: center;
 }
+
 /******** CONSULTATION ******/
+
 .question_but{
 	margin: 20px 0 20px 0;
 	padding: 10px;
@@ -209,16 +227,19 @@ section h2{
 	border: 2px #f2f2f2 ridge;
 	box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
 	float: right;
+	cursor: pointer;
+
 }
 .consultation{
-	background-image: url(../img/pattern.jpeg);		
+	background-image: url(../img/bg.jpeg) ;		
 	color: #f2f2f2;
 	margin-top: 50px;
 	border: 3px #bdadb4 solid;
 	letter-spacing: 4px;
+	background-attachment: fixed;
 }
 .cons_back{
-	background-color: rgba(82, 98, 144, 0.76);
+	background-color: rgba(119, 131, 210, 0.67);
 }
 .price{
 	background: transparent;
@@ -230,4 +251,108 @@ hr{
 	background: #2619e2;
 }
 
+
+/******* ABOUT US ********/
+
+.about_us{
+	margin-top:40px;
+}
+.news, .about{
+	background: #dadada;
+	padding: 20px;
+}
+.more{
+	margin: 15px;
+	border: none;
+	background: #8e8a8a;
+	color: #f2f2f2;
+	padding: 5px;
+
+}
+.new{
+	text-decoration: underline;
+}
+
+.news img{
+	float: left;
+	margin-right: 10px; 
+}
+.band{
+	margin-top: 30px;
+}
+.news p{
+	color: grey;
+	font-size: 14px;
+	padding-left: 10px;
+	margin-left: 10%;
+}
+
+
+/****** GALERY *******/
+
+
+.photo_gallery img{
+	text-align: center;
+	height: 45%;
+	width: 45%;
+	-webkit-transform:scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
+	-moz-transform:scale(0.8); /*Mozilla: масштабирование*/
+	-o-transform:scale(0.8); /*Opera: масштабирование*/
+	-webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+	-moz-transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+	-o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+	opacity: 0.9; /*Начальная прозрачность изображений*/
+	margin: 0 10px 5px 0; /*Интервалы между изображениями*/
+
+}
+
+.photo_gallery img:hover{
+	-webkit-transform:scale(1.1); /*Webkit: увеличиваем размер до 1.2x*/
+	-moz-transform:scale(1.1); /*Mozilla: масштабирование*/
+	-o-transform:scale(1.1); /*Opera: масштабирование*/
+	box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+	-webkit-box-shadow:0px 0px 30px gray; /*Webkit: тени*/
+	-moz-box-shadow:0px 0px 30px gray; /*Mozilla: тени*/
+	opacity: 1;
+}
+.galery {
+	text-align: center;
+	margin-top: 30px;
+	background-attachment: fixed;
+}
+
+.galery h1{
+	color: #f2f2f2;
+	border: 3px #aa9ea2 solid;;
+	padding: 20px;
+	background-color: rgba(119, 131, 210, 0.67); 
+	
+}
+.bg{
+	background-image: url(../img/bg.jpeg) ;
+	background-attachment: fixed;
+}
+
+.couple_but, .get_married_but, .groups_but{
+	padding: 5px 30px 5px 30px;
+	width: 70%;
+	text-align: left;
+	margin-top:40px;
+	font-size: 20px;
+	color: #6b6565;
+	border: 4px #908989 solid;
+}
+.coup, .get_marr, .group{
+	display: none;
+}
+button .fa{
+	margin-right: 30px;
+}
+
+footer{
+	margin-top:40px;
+	background: #676565;
+	padding: 20px;
+	color: #f2f2f2;
+}
 
