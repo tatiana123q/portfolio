@@ -33,6 +33,7 @@ body {
 	width: 100%;
 	max-height: 700px;
 	background-size: cover;
+	z-index: 1;
 
 }
 .wrapper{
@@ -46,6 +47,7 @@ body {
 	color: #f2f2f2;
 	font-size:20px;
 }
+
 .logotype{
 	font-size:25px;
 	color: #f2f2f2;
@@ -66,14 +68,21 @@ body {
 	margin-bottom: 0;
 	margin-top: 0;
 	padding: 0px;
+	z-index: 1;
 
 }
-nav ul li a:hover{
+nav ul li:hover, .search:hover, .phone:hover, .menu_button:hover,
+.slide_but:hover,.question_but:hover{
 	opacity: 0.7;
+	cursor: pointer;
+	-webkit-transform:scale(1.05); /*Webkit: увеличиваем размер до 1.2x*/
+	-moz-transform:scale(1.05); /*Mozilla: масштабирование*/
+	-o-transform:scale(1.05);
 }
 .main_nav ul li{
 	display: inline-block;
 	cursor: pointer;
+	z-index: 1;
 }
 .main_nav a{
 	padding-left: 40px;
@@ -95,6 +104,7 @@ nav ul li a:hover{
     max-height: 600px;
     min-height: 600px;
     position: relative;
+    margin-top: 17px;
 }
 .prev, .next{
 	cursor: pointer;
@@ -161,7 +171,7 @@ nav ul li a:hover{
 
 .fade{
 	-webkit-animation-name: fade;
-	-webkit-animation-duration:1s;
+	-webkit-animation-duration:3s;
 	animation-name:fade;
 	animation-duration:1s;
 }
@@ -186,6 +196,9 @@ nav ul li a:hover{
 .video, .photo, .album{
 	padding: 20px;
 	border: 3px #86727b solid;
+	-webkit-transition-duration: 0.45s; /*Webkit: длительность анимации*/
+	-moz-transition-duration: 0.45s; /*Mozilla: длительность анимации*/
+	-o-transition-duration: 0.45s;
 	
 
 }
@@ -194,6 +207,7 @@ nav ul li a:hover{
 	-webkit-transform:scale(1.05); /*Webkit: увеличиваем размер до 1.2x*/
 	-moz-transform:scale(1.05); /*Mozilla: масштабирование*/
 	-o-transform:scale(1.05);
+
 }
 
 
@@ -242,6 +256,7 @@ section h2{
 	background-color: rgba(119, 131, 210, 0.67);
 }
 .price{
+	bottom:  5px;
 	background: transparent;
 	padding: 20px;
 	border: 3px #87859c outset;
@@ -260,6 +275,9 @@ hr{
 .news, .about{
 	background: #dadada;
 	padding: 20px;
+}
+.more:hover{
+	text-decoration:underline;
 }
 .more{
 	margin: 15px;
@@ -292,6 +310,7 @@ hr{
 
 
 .photo_gallery img{
+	box-shadow:10px 10px 60px gray;
 	text-align: center;
 	height: 45%;
 	width: 45%;
@@ -303,7 +322,6 @@ hr{
 	-o-transition-duration: 0.5s; /*Opera: длительность анимации*/
 	opacity: 0.9; /*Начальная прозрачность изображений*/
 	margin: 0 10px 5px 0; /*Интервалы между изображениями*/
-
 }
 
 .photo_gallery img:hover{
@@ -319,7 +337,11 @@ hr{
 	text-align: center;
 	margin-top: 30px;
 	background-attachment: fixed;
+	-moz-transition:  1s 1s ease;
+	-o-transition:  1s 1s ease;
+	-webkit-transition: 1s 1s ease;
 }
+
 
 .galery h1{
 	color: #f2f2f2;
@@ -345,7 +367,7 @@ hr{
 .coup, .get_marr, .group{
 	display: none;
 }
-button .fa{
+button .fa-chevron-down{
 	margin-right: 30px;
 }
 
