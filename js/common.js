@@ -34,19 +34,19 @@ function showSlides(n){
 
 $(document).ready(function() {
 
-$(".menu_button").click( function(){
-			$(".main_nav ul").slideToggle();
-		});
-$(".couple_but").click( function(){
+	$(".menu_button").click( function(){
+				$(".main_nav ul").slideToggle();
+			});
+	$(".couple_but").click( function(){
 
-			$(".coup").slideToggle();
-		});
-$(".get_married_but").click( function(){
-			$(".get_marr").slideToggle();
-		});
-$(".groups_but").click( function(){
-			$(".group").slideToggle();
-		});
+				$(".coup").slideToggle();
+			});
+	$(".get_married_but").click( function(){
+				$(".get_marr").slideToggle();
+			});
+	$(".groups_but").click( function(){
+				$(".group").slideToggle();
+			});
 	
 
 
@@ -120,11 +120,11 @@ $(".groups_but").click( function(){
 	
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$("form").submit(function() {
+	$("#callback").submit(function() {
 		$.ajax({
 			type: "GET",
 			url: "mail.php",
-			data: $("form").serialize()
+			data: $("#callback").serialize()
 		}).done(function() {
 			alert("Спасибо за заявку!");
 			setTimeout(function() {

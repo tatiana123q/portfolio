@@ -17,10 +17,12 @@
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
+	border: 2.5px #d64b4b solid;
 	
 }
 body input:required:valid,
 body textarea:required:valid {
+	border: 2.5px #59d64b solid;
 	
 }
 body {
@@ -41,6 +43,7 @@ body {
 	padding: 25px 0;
 	color: #f2f2f2;
 	max-height: 700px;
+
 }
 
 .search, .phone{
@@ -146,6 +149,25 @@ nav ul li:hover, .search:hover, .phone:hover, .menu_button:hover,
 	box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
 	cursor: pointer;
 }
+.but_form{
+	background-color: #a28a95;
+	color: #f2f2f2;
+	padding: 10px;
+	border: 2px #f2f2f2 ridge;
+	cursor: pointer;
+	margin-top: 15px;
+}
+.hidden{
+	display: none;
+}
+.order_form input[type=text]{
+	display: block;
+	width: 80%;
+	line-height: 24px; 
+	margin: 0 auto 16px;
+	border: 2.5px grey solid;
+
+}
 
 .dot{
 	cursor: pointer;
@@ -242,6 +264,7 @@ section h2{
 	box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
 	float: right;
 	cursor: pointer;
+	text-transform: uppercase;
 
 }
 .consultation{

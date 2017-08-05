@@ -58,23 +58,31 @@
 						<div class="mySlides fade">
 							<!--<img src="img/fon.png" style="width:100%">-->
 							<div class="text">FotoStudio предлагает вам услуги профессионального фотографа как для фотосессии мероприятий так и для сольных фото в студии<br>
-							<button class="slide_but">Заказать</button>
+							<a href="#callback" class="button fancybox"><button class="slide_but">Заказать</button></a>
 							</div>
 							
 						</div>
 						<div class="mySlides fade">
 							<!--<img src="img/fon.png" style="width:100%">-->
 							<div class="text">У нас работают профессиналы высшого уровня. Качественные фотографии и ретушь<br>
-							<button class="slide_but">Заказать</button>
+							<a href="#callback" class="button fancybox"><button class="slide_but">Заказать</button></a>
 							</div>
 							
 						</div>
 						<div class="mySlides fade">
 							<!--<img src="img/fon.png" style="width:100%">-->
 							<div class="text">Lorem ipsum dolor sit amet<br>
-							<button class="slide_but">Заказать</button>
+							<a href="#callback" class="button fancybox"><button class="slide_but">Заказать</button></a>
 							</div>
 							
+						</div>
+						<div class="hidden">
+							<form id="callback" class="order_form">
+								<h3>Заказать фотосессию</h3>
+								<input type="text" name="name" placeholder="Ваше имя..." required/>
+								<input type="text" name="phone" placeholder="Ваш телефон..." required/>
+								<button class="but_form" type="submit">Заказать</button>
+							</form>
 						</div>
 						<a onclick="plusSlides(-1)" class="prev"><img src="img/left.png"></a>
 						<a onclick="plusSlides(1)" class="next"><img src="img/right.png"></a>
