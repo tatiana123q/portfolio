@@ -246,6 +246,10 @@ nav ul li:hover, .search:hover, .phone:hover, .menu_button:hover,
 	top:-10px;
 	right: 45%;
 }
+.myServices:hover .fa:hover{
+	top:5px;
+
+}
 section h2{
 	color: #6f5f66;
 	letter-spacing: 3px;
@@ -402,7 +406,16 @@ hr{
 button .fa-chevron-down{
 	margin-right: 30px;
 }
-
+.fa-stack{
+	color: #f2f2f2;	
+}
+footer span{
+	cursor:pointer;
+}
+footer span:hover{
+	cursor:pointer;
+	box-shadow: #333 0 0 12px;
+}
 footer{
 	margin-top:40px;
 	background: #676565;
