@@ -386,6 +386,15 @@ hr{
 	font-size: 20px;
 	color: #6b6565;
 	border: 4px #908989 solid;
+	-webkit-transition-duration: 0.45s; /*Webkit: длительность анимации*/
+	-moz-transition-duration: 0.45s; /*Mozilla: длительность анимации*/
+	-o-transition-duration: 0.45s;
+}
+.couple_but:hover, .get_married_but:hover, .groups_but:hover{
+	-webkit-transform:scale(1.05); /*Webkit: увеличиваем размер до 1.2x*/
+	-moz-transform:scale(1.05); /*Mozilla: масштабирование*/
+	-o-transform:scale(1.05);
+
 }
 .coup, .get_marr, .group{
 	display: none;
