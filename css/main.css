@@ -29,7 +29,10 @@ body {
 	font-family: "RobotoRegular", sans-serif;
 	font-size: 16px;
 }
+
 /*********HEADER*********/
+
+
 .top_header{
 	background: url(../img/background.png) 100% 100%;
 	width: 100%;
@@ -101,7 +104,11 @@ nav ul li:hover, .search:hover, .phone:hover, .menu_button:hover,
 	float: right;
 }
 
+
+
 /*******SLIDER********/
+
+
 .slidershow-container{
 	max-width: 1400px;
     max-height: 600px;
@@ -206,7 +213,9 @@ nav ul li:hover, .search:hover, .phone:hover, .menu_button:hover,
 	100%{opacity:1;}
 }
 
-/******** FIRST SECTION *******/
+
+/******** SERVICES *******/
+
 
 .myServices{
 	margin: 30px;
@@ -256,7 +265,9 @@ section h2{
 	text-align: center;
 }
 
+
 /******** CONSULTATION ******/
+
 
 .question_but{
 	margin: 20px 0 20px 0;
@@ -294,7 +305,10 @@ hr{
 }
 
 
+
 /******* ABOUT US ********/
+
+
 
 .about_us{
 	margin-top:40px;
@@ -321,6 +335,8 @@ hr{
 .news img{
 	float: left;
 	margin-right: 10px; 
+	height: 12%;
+	width: 12%;
 }
 .band{
 	margin-top: 30px;
