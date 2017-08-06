@@ -242,7 +242,7 @@ nav ul li:hover, .search:hover, .phone:hover, .menu_button:hover,
 }
 
 
-.border_icon{
+.fa-video-camera, .fa-camera, .fa-book {
 	position: absolute;
 	
 }
