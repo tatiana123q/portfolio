@@ -166,16 +166,41 @@ nav ul li:hover, .search:hover, .phone:hover, .menu_button:hover,
 }
 .hidden{
 	display: none;
+	width: 100%;
 }
 .order_form input[type=text]{
 	display: block;
-	width: 80%;
+	width: 200px;
 	line-height: 24px; 
 	margin: 0 auto 16px;
 	border: 2.5px grey solid;
-
+}
+.hid_phone{
+	float:right;
+	padding: 7px;
+	display: none;
+	font-size: 20px;
+}
+.hid_search{
+	float:right;
+	padding: 7px;
+	display: none;
+	font-size: 20px;
+}
+.hid_search input{
+	border-radius: 15px;
+	border: 3px #9a9a9a solid;
+	padding-left: 8px;
+}
+.hid_search button{
+	border-radius: 15px;
+	border: 3px #898c9a solid;
+	background: #898c9a; 
 }
 
+.order_form{
+	width: 100%;
+}
 .dot{
 	cursor: pointer;
 	height: 13px;
@@ -183,8 +208,7 @@ nav ul li:hover, .search:hover, .phone:hover, .menu_button:hover,
 	background-color: #bbb;
 	border-radius: 50%;
 	display: inline-block;
-	transition: background-color:0.6s ease;
-	
+	transition: background-color:0.6s ease;	
 }
 .dots{
 	text-align: center;

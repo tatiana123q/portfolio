@@ -47,6 +47,12 @@ $(document).ready(function() {
 	$(".groups_but").click( function(){
 				$(".group").slideToggle();
 			});
+	$(".phone").click( function(){
+				$(".hid_phone").slideToggle();
+			});
+	$(".search").click( function(){
+				$(".hid_search").slideToggle();
+			});
 	
 
 
