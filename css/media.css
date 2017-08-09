@@ -28,6 +28,14 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
+	.hid_phone{
+		padding-top: 4px;
+		width: 400px;
+		text-align: center;
+	}
+	.hid_search{
+		padding-top: 4px;
+	}
 	.main_nav ul{
 		display: none;
 		clear: both;
@@ -115,11 +123,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-	.hid_phone{
-		padding-top: 20px;
-		display: block;
 
-	}
 	.order_form input[type=text]{
 	width: 500px;
 	}
