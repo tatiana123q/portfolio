@@ -1,0 +1,54 @@
+section.Infotmation{
+	background-image: url(../img/z.jpg);
+	background-size: cover;
+	max-width: 100%;
+	height: 110px;
+	opacity: 0.8;
+}
+@media only screen and (max-width : 1200px){
+	section.Infotmation{
+	height: 180px!important;
+}
+}
+.Personal_area h2{
+	text-align: center;
+	padding: 40px;
+	
+}
+.Personal_area{
+	background-color: #ededed;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-bottom: 30px;
+}
+
+.Personal_information .col{
+	background-color: white;
+	padding: 30px;
+	margin-top: 30px;
+	box-shadow:  3px 3px 5px rgba(0,0,0,0.4);
+}
+.col h3{
+	color: #39949c;
+}
+.Form_of_visitation{
+	margin-top: 0px;
+	}
+.Personal_information .logout {
+	margin: 30px 0 30px 0;
+	background-color: #7fc221;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 15px 35px 15px 35px;
+	border: none;
+	font-size: 18px;
+	font-weight: bold;
+}
+.Personal_information .logout a {
+	text-decoration: none;
+	color: #000000;
+}

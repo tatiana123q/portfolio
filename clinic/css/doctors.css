@@ -1,0 +1,48 @@
+
+section.Infotmation{
+	background-image: url(../img/z.jpg);
+	background-size: cover;
+	max-width: 100%;
+	height: 340px;
+	opacity: 0.8;
+}
+.Infotmation-title{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Roboto Slab', serif;
+	font-size: 35px;
+	letter-spacing: 3px;
+	color: #fff;
+	margin-top: 50px;
+}
+.doctors{
+	display:flex;
+	justify-content: space-around;
+	flex-wrap:wrap;
+	padding: 30px;
+
+	}
+.doctor{
+	padding: 10px;
+	border: 4px #3da6aa double;
+	margin:20px;
+	}
+.doctor img{
+	
+	margin-left:15% ;
+}
+.doctor:hover{
+	cursor: pointer;
+	opacity: 0.6;
+}
+.doctor {
+	width: 350px;
+	}
+.Our_doctors h1{
+	text-align: center;
+	padding: 40px;
+	font-size: 30px;
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+}
+

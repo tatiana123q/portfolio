@@ -1,0 +1,38 @@
+
+.Form_of_visitation{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	padding: 70px 0 70px 0;
+	background: #272729;
+	color: white;
+	flex-wrap: wrap;
+	}
+.Form_of_visitation select{
+	margin-top: 20px;
+	width: 267px;
+	margin-right: 10px;
+	}
+.Form_of_visitation input{
+	margin: 20px 10px 0 0;
+	width: 267px;
+	}
+.Form_of_visitation_title div h2{
+	border-bottom: 3px solid #689c1f;
+	padding-bottom: 15px;
+	}
+.Form_of_visitation_title div p{
+	margin-top: 25px;
+	max-width: 450px;
+	}
+.Form_of_visitation button{
+	border: none;
+	padding: 15px 40px 15px 40px;
+	background: #7ec31e;
+	margin-top: 30px;
+	}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

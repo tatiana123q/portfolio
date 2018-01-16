@@ -1,0 +1,59 @@
+section.Infotmation{
+	background-image: url(../img/z.jpg);
+	background-size: cover;
+	max-width: 100%;
+	height: 110px;
+	opacity: 0.8;
+}
+@media only screen and (max-width : 1200px){
+	section.Infotmation{
+	height: 180px!important;
+}
+}
+.Registration{
+	padding: 20px;
+	max-width: 100%;
+	margin-left: 30%;
+	margin-right: 30%;
+	background-color: #f9f9f9;
+	border-left: 8px #e9e9e9 solid;
+	}
+.Form_of_registration h2{
+	text-align: center;
+	padding: 30px;
+	color: #2a7377;
+}
+.col{
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-weight: bold;
+	font-size: 15px;
+}
+.col input{
+	width: 250px;
+}
+.col p{
+	width: 150px;
+}
+.but button{
+	margin-top: 50px;
+	background-color:#2b8e92;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 15px 40px 15px 40px;
+	border: none;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+
+}
+.but{
+	text-align: center;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

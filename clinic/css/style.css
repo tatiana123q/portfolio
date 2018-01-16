@@ -1,0 +1,45 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.HeaderWrapper{
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+.Logo {
+	display: flex;
+}
+.Logo-name{
+	color: #00C3D9;
+	font-family: 'Kalam', cursive;
+	font-size: 24px;
+	padding-top: 10px;
+}
+.Nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 20px;
+	padding-top: 10px;
+	font-size: 20px;
+}
+.Nav ul li a{
+	color: #5a5757;
+}
+
+.Nav ul li a:hover{
+	color: #00C3D9;
+}
+.callback{
+	position: fixed;
+	background: url('../img/phone.png');
+	top:75%;
+	right: 4%;
+	border-radius: 50px;
+	border: none;
+	box-shadow:  0 0 12px rgba(0,0,0,0.5);
+	cursor:pointer;
+}
+
+
+

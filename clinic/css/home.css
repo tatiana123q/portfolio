@@ -1,0 +1,105 @@
+
+section.HomeInfotmation{
+	background-image: url(../img/bgn.png);
+	background-size: cover;
+	max-width: 100%;
+	height: 540px;
+}
+.HomeInfotmation-wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+.HomeInfotmation-contacts{
+	display: flex;
+	flex-wrap: wrap;
+}
+.HomeInfotmation-contact{
+	display: flex;
+	padding: 20px;
+	font-size: 18px;
+}
+.email, .phones{
+	display: flex;
+	flex-direction: column;
+	color:  #e6e6e6;
+}
+.fa-envelope-o,.fa-phone, .fa-facebook-square, .fa-tumblr-square{
+	padding: 8px;
+	color: #32B6C5;
+	font-size: 18px;
+}
+.HomeInfotmation-socials a{
+	font-size: 30px;
+}
+.HomeInfotmation-socials{
+	padding: 20px;
+}
+.HomeInfotmation-title{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Roboto Slab', serif;
+	font-size: 35px;
+	letter-spacing: 3px;
+	color: #fff;
+	margin-top: 80px;
+}
+.HomeInfotmation-way_to_form {
+	text-align: center;
+}
+.HomeInfotmation-way_to_form button{
+	margin-top: 50px;
+	background-color: #7fc221;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 15px 40px 15px 40px;
+	border: none;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.HomeInfotmation-way_to_form button a{
+	color:white;
+}
+/************** SERVISES **************/
+.HomeServises-title{
+	text-align: center;
+	padding: 40px;
+	font-size: 30px;
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+}
+.HomeServises-item img{
+	border: 4px #32B6C5 solid;
+	border-radius: 100px;
+	padding: 15px;
+	margin: 15px;
+	background:  #6ed4e1;
+}
+.HomeServises-item span{
+	font-size: 20px;
+	font-weight: bold;
+}
+.HomeServises-item{
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+	border-bottom: 1px #d2d1d1 solid;
+}
+.HomeServises-item:hover{
+	background: #f2f2f2;
+}
+.HomeServises-more{
+	padding: 60px;
+	font-size: 30px;
+	color:#689c1f;
+	cursor: pointer;
+}
+.HomeServises .container .style{
+	display: none;
+	padding: 20px 45px 20px 45px;
+	font-size: 18px;
+}
+
+
