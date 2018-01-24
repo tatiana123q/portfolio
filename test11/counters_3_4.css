@@ -1,7 +1,8 @@
 /*SELECT YOUR DESIRED TONE*/
 .two_sections_wrapper{
-	padding: 1% 4% 4% 4%; 
+	padding: 2% 4% 4% 4%; 
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 .select_desired_wrapper{
@@ -98,7 +99,7 @@ input[name=varr]:checked + div:after{
 	text-transform: uppercase;
 	font-weight: bold;
 	color:#727895;
-	font-size: 15px;
+	font-size: 14px;
 }
 .text_wrapper span:nth-child(3){
 	color:#9da2ba;

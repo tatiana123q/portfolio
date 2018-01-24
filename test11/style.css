@@ -3,7 +3,7 @@
 	padding: 0px;
 }
 .Wrapper{
-	padding: 4% 10% 4% 10%;
+	padding: 4% 10% 5% 10%;
 	background-color: #eceef4;
 }
 .navigation{
@@ -81,7 +81,7 @@
 .Details_table th, .help_table th,.Details_table td, .help_table td{
 	padding: 5px 25px;
 }
-.buttons_container button{
+.buttons_container button, .buttom_submit button{
 	width: 160px;
 	padding: 15px 0 15px 0;
 	margin:5px 0 5px 35px;
@@ -95,6 +95,11 @@
 	color: #a7b2ce;
 }
 .buttons_container button:hover{
+	background-color: #5fcac6;
+	border: 2px #5fcac6 solid;
+	color:white;
+}
+.buttom_submit button:hover{
 	background-color: #5fcac6;
 	border: 2px #5fcac6 solid;
 	color:white;

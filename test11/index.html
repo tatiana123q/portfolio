@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="Counters_1_2.css" />
 		<link rel="stylesheet" href="counters_3_4.css" />
+		<link rel="stylesheet" href="counter_5_footer.css" />
 		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -55,7 +56,7 @@
 						</div>
 						<div class="buttons_container">
 							<button type="submit">place order</button><br>
-							<button  onclick="window.print()">print a quote</button>
+							<button  onclick="window.print()" form="form">print a quote</button>
 						</div>
 					</div>
 					<div class="Help_center">
@@ -131,16 +132,16 @@
 								</td>
 								<td><output name="file_size">78kb</output></td>
 								<td><output name="num_words">842</output></td>
-								<td><button><i class="fa fa-trash" aria-hidden="true"></i>
+								<td><button type="button"><i class="fa fa-trash" aria-hidden="true"></i>
 								</button></td>
 							</tr>
-								<tr>
+							<tr>
 								<td><i class="fa fa-file-text" aria-hidden="true"></i>
 								<output name="file_name">busines_financical.doc</output>
 								</td>
 								<td><output name="file_size">26kb</output></td>
 								<td><output name="num_words">842</output></td>
-								<td><button><i class="fa fa-trash" aria-hidden="true"></i>
+								<td><button type="button"><i class="fa fa-trash" aria-hidden="true"></i>
 								</button></td>
 							</tr>
 						</table>
@@ -249,14 +250,107 @@
 							</legend>
 						</section>
 					</div>
-					<section>
+					<!-- Sign up and choose a payment method -->
+					<section class="Choose_a_payment">
 						<div class="container">
 								<p></p>
-								<h3>Select your desired tone</h3>
+								<h3>Sign up and choose a payment method</h3>
+						</div>
+						<span class="title">Already have an accont with us?<a href="">Sign in</a></span>
+						<form class="payment_form" id="form">
+							<span>full name</span>
+							<input type="text" name="name" required pattern="[A-Za-z' -]{2,30}"/>
+							<div class="input_wrapper">
+								<div class="cont_imp">
+									<span class="email">email adress</span>
+									<input type="email" name="name" pattern="{10,30}" required />
+								</div> 
+								<div class="cont_imp"> 
+									<span>choose a password</span>
+									<input type="password" name="name" required pattern=".{6,40}"/>
+								</div>
 							</div>
-
+							<div class="type_of_pay">
+								<label class="visa">
+									<input required hidden type="radio" name="item" value="visa"/>
+									<div class="backg">
+										<img src="img/card.png" width="40%"
+										height="40%">
+									</div>
+								</label>
+								<label class="PayPal">
+									<input required hidden checked  type="radio" name="item" value="PayPal"/>
+									<div class="backg">
+										<img src="img/pay_pal.png" width="40%"
+										height="40%">
+									</div>
+								</label>
+								<label class="amazon">
+									<input required hidden type="radio" name="item" value="amazon"/>
+									<div class="backg" >
+										<img src="img/amazon.png" width="40%"
+										height="40%">
+									</div>
+								</label>
+							</div>
+							<div class="card_pay_wrapper">
+								<label class="num_card">
+									<strong>Card number</strong>
+									<input type="text" name="card_num" required pattern="[0-9]{16}" required>
+								</label>
+								<label class="data">
+									<strong>Expire date</strong>
+									<input type="text" pattern="[0-9]{6}" placeholder="DD/MM/YY" name="card_num" required>
+								</label>
+								<label class="code">
+									<strong>Code</strong>
+									<input type="text" pattern="{3}" name="card_num" required>
+								</label>
+							</div>
+						</form>
+						<div class="buttom_submit">
+							<label class="agree">
+								<input type="checkbox" name="ok" required>
+								<small>I agree to the Terms&Conditions</small>
+							</label>
+							<button type="submit" form="form">place order</button>
+							<button  onclick="window.print()">print a quote</button>
+						</div>
 					</section>
 			</section>
 		</div> 
+		<footer>
+			<div class="footer_wrapper">
+				<div class="what_do">
+					<i class="fa fa-heart-o" aria-hidden="true"></i>
+					<div class="content">
+						<strong>what we do</strong>
+						<p>We provide a a full range of language services including content development, document, website and social media accounts translations.</p>
+					</div>
+				</div>
+				<address>  
+					<i class="fa fa-compass" aria-hidden="true"></i>
+					<div class="content">
+						<strong>our main office</strong>
+						<ul>
+							<li>Dubai UAE</li>
+							<li>P.O. Box: 502735</li>
+							<li>Phone: +971(0) 335567</li>
+						</ul>
+					</div>
+				</address>
+				<div class="connect">
+					<i class="fa fa-link" aria-hidden="true"></i>
+					<div class="content">
+						<strong>connect whith us</strong><br>
+						<i class="fa fa-facebook-square" aria-hidden="true"></i>
+						<span>facebook</span><br>
+						<i class="fa fa-twitter-square" aria-hidden="true"></i>
+						<span>twitter</span>
+					</div>
+				</div>
+				<img src="img/logo_footer.png" width="10%" height="14%">
+			</div>
+		</footer>
 	</body>
 </html>
