@@ -7,6 +7,7 @@
 		<title>Form</title>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="Counters_1_2.css" />
+		<link rel="stylesheet" href="counters_3_4.css" />
 		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -16,14 +17,14 @@
 		<div class="Wrapper">
 			<!-- NAVIGATION -->
 			<section class="navigation">
-				<button class="arrow_left">
+				<button type="button" class="arrow_left">
 					<i class="fa fa-long-arrow-left" aria-hidden="true"></i>
 					<p>go back</p>
 				</button>
 				<div class="target">
 					<i class="fa fa-bullseye" aria-hidden="true"></i>
 				</div>
-				<button class="sing_in">
+				<button type="button" class="sing_in">
 					<i class="fa fa-user" aria-hidden="true"></i>
 					<p>sign in</p>
 				</button>
@@ -53,8 +54,8 @@
 							</table>
 						</div>
 						<div class="buttons_container">
-							<button>place order</button><br>
-							<button>print a quote</button>
+							<button type="submit">place order</button><br>
+							<button  onclick="window.print()">print a quote</button>
 						</div>
 					</div>
 					<div class="Help_center">
@@ -89,7 +90,7 @@
 							</div>
 						</label>
 						<label class="documents item">
-							<input required hidden type="radio" name="var" value="websit"/>
+							<input required hidden checked type="radio" name="var" value="websit"/>
 							<div class="background_img">
 								<img src="img/documents.png" width="85" height="95">
 								<p>Documents</p>
@@ -126,9 +127,19 @@
 							</tr>
 							<tr>
 								<td><i class="fa fa-file-text" aria-hidden="true"></i>
-								<input type="text"  id="file_size" /></td>
-								<td><input type="text"  id="file_size" /></td>
-								<td><input type="text"  id="number_of_words" /></td>
+								<output name="file_name">busines_operations.doc</output>
+								</td>
+								<td><output name="file_size">78kb</output></td>
+								<td><output name="num_words">842</output></td>
+								<td><button><i class="fa fa-trash" aria-hidden="true"></i>
+								</button></td>
+							</tr>
+								<tr>
+								<td><i class="fa fa-file-text" aria-hidden="true"></i>
+								<output name="file_name">busines_financical.doc</output>
+								</td>
+								<td><output name="file_size">26kb</output></td>
+								<td><output name="num_words">842</output></td>
 								<td><button><i class="fa fa-trash" aria-hidden="true"></i>
 								</button></td>
 							</tr>
@@ -140,19 +151,111 @@
 							<p></p>
 							<h3>Choose your language pairings</h3>
 						</div>
+						<form>
+							<div class="select_wrapper">
+								<label for="from">From</label>
+								<select id="from" name="from">
+									<option selected="selected">English</option>
+									<option value="1">Українська</option>
+									<option value="2">Русский</option>
+									<option value="3">Arabic</option>
+									<option value="4">Kardish</option>
+								</select>
+							</div>
+							<div class="line_wrapper">
+								<div class="select_wrapper">
+									<label for="from">To</label>
+									<select id="To" name="To">
+										<option selected="selected">Arabic</option>
+										<option value="1">Українська</option>
+										<option value="2">Русский</option>
+										<option value="3">Arabic</option>
+										<option value="4">Kardish</option>
+									</select>
+								</div>
+								<div class="select_wrapper">
+									<select id="To" name="To">
+										<option selected="selected">Kardish</option>
+										<option value="1">Українська</option>
+										<option value="2">Русский</option>
+										<option value="3">Arabic</option>
+										<option value="4">English</option>
+									</select>
+								</div>
+								<button type="button" class="remove"><i class="fa fa-trash" aria-hidden="true"></i>
+								</button>
+								<div class="button-wrapper">
+									<button type="button" class=add""><i class="fa fa-plus" aria-hidden="true"></i>
+									<span>Add</span>
+									</button>
+								</div>
+							</div>
+						</form>
 					</section>
-					<div>
-					<section>
-						<p></p>
-					</section>
-					<section>
-						<p></p>
-					</section>
+					<div class="two_sections_wrapper">
+						<!-- SELECT YOUR DESIRED TONE -->
+						<section class="select_desired_tone">
+							<div class="container">
+								<p></p>
+								<h3>Select your desired tone</h3>
+							</div>
+							<div class="select_desired_wrapper">
+								<label class="friendly item">
+									<input required hidden type="radio" name="varr" value="Frendly"/>
+									<div class="background">
+										<i class="fa fa-comments" aria-hidden="true"></i>
+										<span>Friendly/Casual</span>
+									</div>
+								</label>
+								<label class="Corporate item">
+									<input required hidden checked  type="radio" name="varr" value="Corporate"/>
+									<div class="background">
+										<i class="fa fa-suitcase" aria-hidden="true"></i>
+										<span>Corporate/Prol</span>
+									</div>
+								</label>
+								<label class="Media item">
+									<input required hidden type="radio" name="varr" value="Media"/>
+									<div class="background" >
+										<i class="fa fa-bullhorn" aria-hidden="true"></i>
+										<span>Media/Formal</span>
+									</div>
+								</label>
+							</div>
+						</section>
+						<!-- Tell us how urgent this job -->
+						<section class="urgent_job">
+							<div class="container">
+								<p></p>
+								<h3>Tell us how urgent this job</h3>
+							</div>
+							<div class="slidecontainer">
+								<input required type="range" class="slider" name="urgent" min="0" max="100" step="50" value="50"/>
+							</div>
+							<div class="names_ranges">
+								<span>I got time</span>
+								<span class="color">Average</span>
+								<span>Yesterday</span>
+							</div>
+							<legend class="timeline_info">
+								<div class="info_wrapper">
+									<i class="fa fa-info-circle" aria-hidden="true"> </i>
+									<div class="text_wrapper">
+										<span>Timeline Info</span><br>
+										<span>With an <strong>average</strong> timeline set up, our expert translator can take a reasonable amont of time perfecting your translation.
+										</span>
+									</div>
+								</div>
+							</legend>
+						</section>
 					</div>
 					<section>
-						<p></p>
+						<div class="container">
+								<p></p>
+								<h3>Select your desired tone</h3>
+							</div>
+
 					</section>
-				</div>
 			</section>
 		</div> 
 	</body>

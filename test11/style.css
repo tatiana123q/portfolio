@@ -174,10 +174,11 @@ input[name=var]:checked + div:after{
 	font-size: 30px;	
 	padding: 0;
 	margin: 0;
-	right: -6px;
-	top:-6px;
+	right: -8px;
+	top:-8px;
 	z-index: 2;
 	background-color: white;
+	border-radius: 40px;
 }
 
 
