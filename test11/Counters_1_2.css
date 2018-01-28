@@ -4,16 +4,18 @@
 }
 
 .wrapper_for_counter section p{
-    counter-increment: p;
+    counter-increment: p;;
 }
 .wrapper_for_counter section p::before {
     content: counter(p);
     border: 1px #6e768f solid;
-    border-radius: 34px;
+    border-radius: 60px;
     color: #6e768f;
-    padding: 9px 12px 9px 12px;
+    padding: 10px 14px 10px 14px;
     font-weight: bold;
     font-size: 16px;
+    width: 20px;
+    height: 20px;
 }
 .container{
 	display: flex;
@@ -131,7 +133,7 @@
 	content:"";
 	display: block;
 	width: 2px;
-	height: 49px;
+	height: 100%;
 	background-color: #dce0eb;
 	position: absolute;
 	right: 50px;
@@ -148,6 +150,7 @@
 	right: 25px;
 	top:15px;
 	z-index: 1;
+	pointer-events: none;
 }
 .line_wrapper .select_wrapper {
 	margin: 15px 5px 10px 21px;
