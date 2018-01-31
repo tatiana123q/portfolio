@@ -1,0 +1,14 @@
+@media only screen and (max-width : 767px){
+	header nav{
+	padding: 10px 10px;
+}
+@media only screen and (max-width : 491px){
+	header nav{
+		display: inline-block;
+		text-align: center;
+	}
+	.button_wrapper{
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+}

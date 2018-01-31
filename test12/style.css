@@ -1,0 +1,132 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	 font-family: 'Proxima Nova', Calibri, sans-serif;
+}
+header{
+	background-image: url(img/fon2.jpg);
+    background-size: cover;
+    max-width: 100%;
+    height: 420px;
+}
+header nav{
+	background-color: rgba(5, 4, 3, 0.5);
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 10px 100px;
+}
+
+header button{
+	background-color: #3ca209;
+	color: white;
+	font-size: 18px;
+	padding: 15px 25px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: 3px rgba(255,255,255,0.9) solid;
+	box-shadow: 0 0 40px rgba(3,4,5, 0.9);
+}
+.button_wrapper{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+header button:hover{
+	background-color: #246703;
+}
+.logo span{
+	color: white;
+	font-size: 30px;
+}
+.logo{
+	vertical-align: center;
+}
+.current_time{
+	color: white;
+	font-size: 30px;
+	display: flex;
+	align-content: center;
+	height: 100%;
+	padding: 30px;
+}
+.authentification{
+	display: flex;
+	color: white;
+	font-size: 20px;
+	padding: 30px 0;
+}
+.authentification a{
+	text-decoration: none;
+	color: white;
+	padding: 0 10px;
+}
+.authentification a:hover{
+	text-decoration: underline;
+}
+
+/********* PIZZES **********/
+.section_wrapper {
+    display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 4%;
+}
+body {
+	counter-reset: section;
+}
+
+.first_line p::before {
+	counter-increment: section;
+    content: "# " counter(section);
+}
+.first_line{
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 15px;
+}
+.second_line{
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 15px;
+}
+.item{
+	background-color: #e6e6e6;
+	width: 300px;
+	height: 380px;
+	margin: 10px;
+	padding: 5px;
+	position: relative;
+}
+.item:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+.item:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 50px solid #75da43; 
+	border-right: 50px solid transparent;
+	top:0;
+	left: 0;
+}
+.item img{
+	border: 4px solid #a9b1a5;
+    border-radius: 500px;
+    margin: 10px;
+    padding: 3px;
+}
+/****** FOOTER *****/
+footer{
+	display: flex;
+	justify-content: space-between;
+	background-color: #464646;
+	padding: 4%;
+	color: white;
+}
