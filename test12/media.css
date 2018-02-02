@@ -2,13 +2,26 @@
 	header nav{
 	padding: 10px 10px;
 }
-@media only screen and (max-width : 491px){
-	header nav{
-		display: inline-block;
-		text-align: center;
+@media only screen and (max-width : 515px){
+	.logo img{
+		width: 40px!important;
+		height: 40px!important;
+		padding-top: 25px;
+	}
+	.current_time{
+		font-size: 20px;
 	}
 	.button_wrapper{
-		padding-bottom: 20px;
-		padding-top: 20px;
+		padding-bottom: 50px;
+		padding-top: 50px;
+	}
+	.authentification{
+		font-size: 18px;
+	}
+	header{
+    	height: 320px;
+	}
+	.fa-user{
+		display: none!important;
 	}
 }
