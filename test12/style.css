@@ -84,12 +84,8 @@ body {
 	counter-increment: section;
     content: "# " counter(section);
 }
-.first_line{
-	display: flex;
-	justify-content: space-between;
-	padding: 8px 15px;
-}
-.second_line{
+
+.second_line, .first_line{
 	display: flex;
 	justify-content: space-between;
 	padding: 8px 15px;
