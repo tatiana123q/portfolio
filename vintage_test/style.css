@@ -15,17 +15,18 @@
 	padding: 2% 3%;
 	animation-name: back;
 	animation-duration: 7s;
+	transition-duration: 30s;
 	animation-iteration-count: infinite;
 }
 @keyframes back{
-	0%     {background-image: url(img/geometry.png);}
-	30%     {background-image: url(img/geometry.png);}
+	0%     {background-image: url(img/geometry.jpg);}
+	30%     {background-image: url(img/geometry.jpg);}
 
-	31%     {background-image: url(img/back2.png);}
-	67%     {background-image: url(img/back2.png);}
+	31%     {background-image: url(img/back2.jpg);}
+	67%     {background-image: url(img/back2.jpg);}
 
-	68%     {background-image: url(img/back3.png);}
-	100%     {background-image: url(img/back3.png);}
+	68%     {background-image: url(img/back3.jpg);}
+	100%     {background-image: url(img/back3.jpg);}
 }
 .header-top{
 	display:flex;
@@ -68,12 +69,17 @@
 /********* achivements ***********/
 
 .achivements{
-	background-image: url(img/fon2.png);
-	background-size: cover;
+	background-image: url(img/pattern.png),
+	url(img/line.png),
+	url(img/slesh.png),
+	url(img/dots.png);
+	background-repeat: no-repeat;
+	background-position: 30% 0%, 10% 18%, 98% 42%, 98% 70%;
 	height: 1400px;
 	margin-right: 10px;
 	padding: 130px 0 0 165px;
 }
+
 .achivements :nth-child(2){
 	margin-left: 285px;
 	margin-top: -100px;
@@ -88,9 +94,9 @@
 	position: relative;
 }
 .achivements .achivement img:hover{
-	box-shadow: 0px 0px 20px #151515;
-}
+	box-shadow: 3px 3px 30px #151515;
 
+}
 .achivement__title{
 	position: absolute;
 }
@@ -98,10 +104,10 @@
 /*********** characteristics********/
 
 .characteristics{
-	background-image: url(img/ss.png);
-	background-size: cover;
-	height: 800px;
-	padding: 5%;
+	background-image: url(img/А.png);
+	background-repeat: no-repeat;
+	background-position: center 93%;
+	padding: 0% 5% 4% 5%;
 }
 .characteristic-types{
 	display: flex;
@@ -124,7 +130,7 @@
 }
 .characteristic-title{
 	text-align: center;
-	padding-top: 260px;
+	padding-top: 150px;
 }
 .characteristic-title p:first-of-type{
 	margin-top: 50px;
@@ -140,6 +146,42 @@
 	font-family: DINPro;
   	font-size: 12px;
   	font-weight: bold;
-	margin-top: 60px;
+	margin-top: 50px;
+}
+
+/******** results ********/
+
+.results{
+	background-color:#191919;
+	background-image: url(img/happy.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	display: flex;
+	justify-content: space-around;
+	padding: 4% 3%;
+}
+.result{
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.result div :first-child{
+	font-family: 'Gotham Pro Regular';
+  	font-size: 22px;
+  	font-weight: 900;
+  	width: 240px;
+  	padding: 0 0 20px 0;
+}
+.result div :last-child{
+	font-family: 'DIN Pro';
+  	font-size: 16px;
+  	font-weight: normal;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.5;
+  	letter-spacing: normal;
+  	width: 406px;
+
 }
 
