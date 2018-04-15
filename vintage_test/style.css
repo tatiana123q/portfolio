@@ -1,0 +1,130 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/******** header ***********/
+
+.header{
+	background-image: url(img/geometry.png);
+	background-size: cover;
+	max-width: 100%;
+	height: 100vh;
+	padding: 3%;
+}
+.header-top{
+	display:flex;
+	justify-content: space-between;
+}
+.header-top :first-child{
+	padding-top: 15px;
+	cursor:pointer;
+}
+.header-top :last-child{
+	cursor:pointer;
+}
+.header-lang button{
+	border:none;
+	background: transparent;
+	color:white;
+	font-weight: bold;
+	display: block;
+	font-size: 12px;
+	font-family: 'DIN Pro';
+	padding-top: 30px;
+	cursor: pointer;
+}
+.header-title{
+	color: white;
+	width: 491px;
+	float: right;
+	padding:260px 30px 30px 0 ;
+}
+.header-title :first-child{
+	font-size: 17px;
+	font-family: 'DIN Pro';
+}
+.header-title :last-child{
+	font-size: 52px;
+	font-family: 'Gotham Pro Regular';
+	font-weight: bold;
+}
+
+/********* achivements ***********/
+
+.achivements{
+	background-image: url(img/fon2.png);
+	background-size: cover;
+	height: 1400px;
+	margin-right: 10px;
+	padding: 130px 0 0 165px;
+}
+.achivements :nth-child(2){
+	margin-left: 285px;
+	margin-top: -100px;
+}
+.achivements :last-child{
+	margin-top: -100px;
+}
+.achivements img:nth-child(2):hover{
+	position: relative;
+}
+.achivements img:nth-child(1):hover{
+	position: relative;
+}
+.achivements .achivement img:hover{
+	box-shadow: 0px 0px 20px #151515;
+}
+
+.achivement__title{
+	position: absolute;
+}
+
+/*********** characteristics********/
+
+.characteristics{
+	background-image: url(img/ss.png);
+	background-size: cover;
+	height: 800px;
+	padding: 5%;
+}
+.characteristic-types{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.characteristic-types div{
+	width: 260px;
+}
+.characteristic-types div :first-child{
+	font-size: 24px;
+	font-family: 'Gotham Pro Regular';
+	font-weight: bold;
+	padding: 10px 0 30px 0;
+}
+.characteristic-types div :last-child{
+	font-size: 16px;
+	font-family: 'DIN Pro';
+	margin-top: 100px!important;
+}
+.characteristic-title{
+	text-align: center;
+	padding-top: 260px;
+}
+.characteristic-title p:first-of-type{
+	margin-top: 50px;
+	width: 574px;
+	font-family: DINPro;
+	font-size: 16px;
+}
+.characteristic-title-wrapper{
+	display: flex;
+	justify-content: center;
+}
+.characteristic-title :last-child{
+	font-family: DINPro;
+  	font-size: 12px;
+  	font-weight: bold;
+	margin-top: 60px;
+}
+
