@@ -8,9 +8,24 @@
 .header{
 	background-image: url(img/geometry.png);
 	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 	max-width: 100%;
 	height: 100vh;
-	padding: 3%;
+	padding: 2% 3%;
+	animation-name: back;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+}
+@keyframes back{
+	0%     {background-image: url(img/geometry.png);}
+	30%     {background-image: url(img/geometry.png);}
+
+	31%     {background-image: url(img/back2.png);}
+	67%     {background-image: url(img/back2.png);}
+
+	68%     {background-image: url(img/back3.png);}
+	100%     {background-image: url(img/back3.png);}
 }
 .header-top{
 	display:flex;
