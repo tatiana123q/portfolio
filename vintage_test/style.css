@@ -44,8 +44,12 @@
 	display: block;
 	font-size: 12px;
 	font-family: 'DIN Pro';
-	padding-top: 30px;
+	margin-top: 30px;
 	cursor: pointer;
+}
+.header-lang button:active{
+	background-color: #191919;
+	border: none;
 }
 .header-title{
 	color: white;
@@ -71,33 +75,54 @@
 	url(img/slesh.png),
 	url(img/dots.png);
 	background-repeat: no-repeat;
-	background-position: 30% 0%, 10% 18%, 98% 42%, 98% 70%;
+	background-position: 30% 0%, center 18%, 98% 44%, 98% 70%;
 	height: 1400px;
 	margin-right: 10px;
-	padding: 130px 0 0 165px;
+	padding: 150px 0 0 155px;
+	display: flex;
 }
-
-.achivements :nth-child(2){
-	margin-left: 285px;
-	margin-top: -100px;
+.achivement-photos div:nth-of-type(2){
+	margin-left: 220px;
+	margin-top: -130px;
 }
-.achivements :last-child{
-	margin-top: -100px;
-}
-.achivements img:nth-child(2):hover{
+.achivement-photos div:nth-of-type(2) img:hover{
 	position: relative;
 }
-.achivements img:nth-child(1):hover{
+.achivement-photos div:first-child img:hover{
 	position: relative;
 }
-.achivements .achivement img:hover{
+.achivement-photos div img:hover{
 	box-shadow: 3px 3px 30px #151515;
-
 }
-.achivement__title{
-	position: absolute;
+.achivement-photos div:last-child{
+	margin-top: -130px;
+}
+.achivement-title{
+	margin-left: -55px;
+}
+.achivement-title__item{
+	margin: 120px 0 275px 0;
+}
+.achivement-title__item:nth-of-type(2){
+	padding: 0 0 0px 170px;
 }
 
+.achivement-title__item :first-child{
+	font-family: 'DIN Pro';
+  	font-size: 12px;
+  	font-weight: bold;
+  	text-transform: uppercase;
+}
+.achivement-title__item span:nth-of-type(2){
+	font-family: 'Gotham Pro Regular';
+	font-weight: bold;
+  	font-size: 70px;
+}
+.achivement-title__item :last-child{
+	font-family: 'Gotham Pro Regular';
+	font-weight: bold;
+  	font-size: 22px;
+}
 /*********** characteristics********/
 
 .characteristics{
@@ -123,7 +148,7 @@
 .characteristic-types div :last-child{
 	font-size: 16px;
 	font-family: 'DIN Pro';
-	margin-top: 100px!important;
+	margin-top: 100px;
 }
 .characteristic-title{
 	text-align: center;
@@ -154,6 +179,7 @@
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	padding: 4% 3%;
 }
@@ -196,9 +222,13 @@
 }
 .client{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	color: white;
 	padding: 3% 2%;
+}
+.client div{
+	padding-top: 30px;
 }
 .client div :nth-child(2){
 	font-family: 'Gotham Pro Regular';
