@@ -1,3 +1,4 @@
+
 @media only screen and (max-width :1300px){
 	.achivements{
 		padding: 150px 0 0 115px;
@@ -21,7 +22,7 @@
 }
 }
 @media only screen and (max-width :835px){
-		.achivements{
+	.achivements{
 		padding: 150px 0 0 30px;
 	
 }
@@ -29,7 +30,50 @@
 		margin-left: 100px;
 		margin-top: -130px;
 }
-.achivement-title__item:nth-of-type(2){
+	.achivement-title__item:nth-of-type(2){
 	padding: 0 0 0px 100px;
 }
+}
+
+/*** Big devices ****/
+@media only screen and (max-width :2881px){
+	.achivements{
+		padding: 150px 0 0 27%;
+	}
+}
+
+@media only screen and (max-width :2000px){
+	.achivements{
+		padding: 150px 0 0 24%;
+	}
+}
+@media only screen and (max-width :1900px){
+	.achivements{
+		padding: 150px 0 0 22%;
+	}
+}
+@media only screen and (max-width :1800px){
+	.achivements{
+		padding: 150px 0 0 20%;
+	}
+}
+@media only screen and (max-width :1700px){
+	.achivements{
+		padding: 150px 0 0 18%;
+	}
+}
+@media only screen and (max-width :1600px){
+	.achivements{
+		padding: 150px 0 0 16%;
+	}
+}
+@media only screen and (max-width :1500px){
+	.achivements{
+		padding: 150px 0 0 15%;
+	}
+}
+@media only screen and (max-width :1400px){
+	.achivements{
+		padding: 150px 0 0 13%;
+	}
 }
