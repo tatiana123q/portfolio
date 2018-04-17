@@ -1,0 +1,290 @@
+
+
+$DinPro: 'DIN Pro'
+$Gotham: 'Gotham Pro Regular'
+
+*
+	margin: 0px;
+	padding: 0px;
+
+
+/******** header ***********/
+
+.header
+	background-image: url(../img/geometry.png)
+	background-size: cover
+	background-attachment: fixed
+	background-repeat: no-repeat
+	max-width: 100%
+	height: 100vh
+	padding: 2% 3%
+	animation: back 10s ease-out 0s infinite;
+
+@keyframes back
+	0%	
+		background-image:url(../img/geometry.jpg)
+	30%	
+		background-image:url(../img/geometry.jpg)
+
+	31%	
+		background-image:url(../img/back2.jpg)
+	67%	
+		background-image: url(../img/back2.jpg)
+
+	68%	
+		background-image:url(../img/back3.jpg)
+	100% 
+		background-image:url(../img/back3.jpg)
+
+.header-top
+	display: flex
+	justify-content: space-between
+
+	& :first-child
+		padding-top: 15px
+		cursor: pointer
+
+	& :last-child
+		cursor: pointer
+
+.header-lang button
+	border: none
+	background: transparent
+	color: white
+	font-weight: bold
+	display: block
+	font-size: 12px
+	font-family: $DinPro
+	margin-top: 30px
+	cursor: pointer
+
+	&:active
+		background-color: #191919
+		border: none
+
+.header-title
+	color: white
+	width: 491px
+	float: right
+	padding: 260px 30px 30px 0 
+
+	& :first-child
+		font-size: 17px
+		font-family: $DinPro
+
+	& :last-child
+		font-size: 52px
+		font-family: $Gotham
+		font-weight: bold
+
+
+/********* achivements ***********/
+
+.achivements
+	background-image: url(../img/pattern.png),
+	url(../img/line.png),
+	url(../img/slesh.png),
+	url(../img/dots.png)
+	background-repeat: no-repeat
+	background-position: 30% 0%, center 18%, 98% 44%, 98% 70%
+	height: 1400px
+	margin-right: 10px
+	padding: 150px 0 0 155px
+	display: flex
+
+.achivement-photos div:nth-of-type(2)
+	margin-left: 220px
+	margin-top: -130px
+
+.achivement-photos div:nth-of-type(2) img:hover
+	position: relative
+
+.achivement-photos div:first-child img:hover
+	position: relative;
+
+.achivement-photos div img:hover
+	box-shadow: 3px 3px 30px #151515
+
+.achivement-photos div:last-child
+	margin-top: -130px
+
+.achivement-title
+	margin-left: -55px
+
+.achivement-title__item
+	margin: 120px 0 275px 0
+
+	&:nth-of-type(2)
+		padding: 0 0 0px 170px
+
+
+	& :first-child
+  		font:
+  			size: 12px
+  			weight: bold
+  			transform: uppercase
+  			family: $DinPro
+
+.achivement-title__item span:nth-of-type(2)
+	font:
+  		size: 70px
+  		family: $Gotham
+  		weight: bold
+
+.achivement-title__item :last-child
+	font:
+  		size: 22px
+  		family: $Gotham
+  		weight: bold
+
+/*********** characteristics********/
+
+.characteristics
+	background-image: url(../img/А.png)
+	background-repeat: no-repeat
+	background-position: center 93%
+	padding: 0% 5% 4% 5%
+
+.characteristic-types
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+	div
+		width: 260px
+
+		& :first-child
+			font-size: 24px
+			font-family: $Gotham
+			font-weight: bold
+			padding: 10px 0 30px 0
+
+		& :last-child
+			font-size: 16px
+			font-family: $DinPro
+			margin-top: 100px
+
+.characteristic-title
+	text-align: center
+	padding-top: 150px
+
+	& :last-child
+  		margin-top: 50px
+  		font:
+  			size: 12px
+  			weight: bold
+  			family: $DinPro
+		
+.characteristic-title p:first-of-type
+	margin-top: 50px
+	width: 574px
+	font-family: $DinPro
+	font-size: 16px
+
+.characteristic-title-wrapper
+	display: flex
+	justify-content: center
+
+/******** results ********/
+
+.results
+	background-color: #191919
+	background-image: url(../img/happy.png)
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	padding: 4% 3%
+
+.result
+	color: white
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	flex-wrap: wrap-reverse
+
+.result div :first-child
+	padding: 0px 0 20px 0
+	width: 240px
+	font: 
+		size: 22px
+  		weight: 900
+		family: $Gotham
+
+.result div :last-child
+	width: 406px
+	letter:
+  		spacing: normal
+	line:
+		height: 1.5
+	font:
+  		size: 16px
+  		weight: normal
+  		style: normal
+  		stretch: normal
+  		family: $DinPro
+
+
+/******** clients *********/
+
+.clients
+	background-color: #191919
+	padding: 3%
+
+.clients > p
+	color: white
+	margin-left: auto
+	margin-right: auto
+	width: 137px
+
+.client
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	color: white
+	padding: 3% 2%
+
+	div
+		padding-top: 30px
+
+		& :nth-child(2)
+  			font:
+  				size: 24px
+  				weight: bold
+  				family: $Gotham
+  			padding-top: 20px
+
+		& :last-child
+			width: 244px
+			padding-top: 17px
+			font:
+				size: 16px
+				family: $DinPro
+
+.clients button
+	border: none
+	color: white
+	cursor: pointer
+	border-bottom: 1px white solid
+	background: transparent
+	padding: 20px 10px 20px 10px
+	text-transform: uppercase
+	font:
+  		size: 12px
+  		weight: bold
+  		family: $DinPro
+  	
+	&:hover
+		border: 1px white solid;
+
+.client-button
+	text-align: center
+	padding-top: 20px
+
+.second
+	display: none
+
+@import "fonts"
+@import "media"
+
