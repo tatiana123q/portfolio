@@ -1,0 +1,53 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.Fotogalery{
+	overflow-x:hidden;
+	height: 100vh;
+	vertical-align: center;
+	padding-top: 20px;
+	background-color: #ececec;
+}
+.Fotogalery > :first-child{
+	padding: 0 0 40px 20px;
+}
+.Fotogalery-arrows button{
+	padding: 0 30px;
+	position: absolute;
+	top: 40%; 
+	background-color: transparent;
+	border: none; 
+	cursor: pointer;
+	background-color: #ffffff8a;
+	z-index: 1;
+}
+.Fotogalery-arrows button:hover{
+	background-color: #ffffff73;
+	border-radius: 30px;
+}
+.Fotogalery-arrows button:last-child{
+	right: 0; 
+}
+.Fotogalery-show{
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px red solid;
+}
+.Fotogalery__small{
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40px;
+}
+.Fotogalery__small img{
+	margin-right: 6px;
+}
+.Fotogalery__img{
+	display: flex;
+}
+.Fotogalery__img img{
+	margin: 0 40px 0 0px;
+}
+
