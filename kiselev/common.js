@@ -25,7 +25,7 @@ function MoveRight(){
 	if(minor < -2560){ minor = -2560;}
 	view.style.marginLeft = `${minor}px`;
 	i +=1;
-	if(i > 5){ i = 5;}
+	if(i > 4){ i = 4;}
 	small_view.children[i].style.boxShadow = "8px 8px 20px #272626";
 	small_view.children[i-1].style.boxShadow = "0 0 0 blue";
 }
