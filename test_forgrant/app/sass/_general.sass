@@ -1,0 +1,68 @@
+.slick-slide 
+	outline: none
+
+.hamburger
+	outline: none !important
+
+a
+	color: $accent
+	&:hover
+		color: darken($accent, 20)
+		text-decoration: none
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+.top
+	position: fixed
+	bottom: 25px
+	background-color: #E0E0E0
+	border-radius: 10em
+	color: #666
+	font-size: 26px
+	width: 50px
+	height: 50px
+	line-height: 50px
+	text-align: center
+	cursor: pointer
+	transition: all .25s ease
+	right: -100px
+	z-index: 12
+	opacity: .5
+	&.active
+		right: 30px
+	i
+		line-height: 0
+	&:hover
+		color: #fff
+		background-color: $accent
+		opacity: 1
+
+.button
+	display: inline-block
+	border: none
+	outline: none !important
+	background-color: $accent
+	text-align: center
+	color: white
+	cursor: pointer
+	text-transform: uppercase
+	font-size: 14px
+	padding: 8px 15px
+	border-radius: 3px
+	box-shadow: 0 4px 0 darken($accent, 10)
+	margin-bottom: 4px
+	text-decoration: none
+	+transition(.25s)
+	&:hover
+		background-color: lighten($accent, 05)
+		color: white
+		text-decoration: none
+	&:active
+		background-color: darken($accent, 10)
+		transform: translateY(2px)

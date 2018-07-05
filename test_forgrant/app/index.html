@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Test Forgrant</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+
+<nav class="main-menu">
+		<ul >
+			<li>
+				<a href="#personal-data">Личная информация</a>
+			</li>
+			<li>
+				<a href="#experience">Опыт</a>
+			</li>
+			<li>
+				<a href="#about">О себе</a>
+			</li>
+		</ul>
+</nav>
+<header class="main-header">
+	<p>Анкета</p>
+	<img src="../img/foto.jpg">
+</header>
+<section class="personal-data" id="personal-data">
+	<p>Личная информаци</p>
+	<form action="">
+		<input type="text" name="name" placeholder="Харченко Татьяна Петровна">
+		<select name="year" id="year">
+			<option value="">2000</option>
+			<option value="">1999</option>
+			<option value="">1998</option>
+			<option value="">1997</option>
+			<option value="" selected>1996</option>
+			<option value="">1995</option>
+			<option value="">1994</option>
+			<option value="">1993</option>
+			<option value="">1992</option>
+			<option value="">1991</option>
+			<option value="">1990</option>
+			<option value="">1989</option>
+			<option value="">1988</option>
+			<option value="">1987</option>
+		</select>
+		<input type="text" name="place" placeholder="Киев">
+		<input type="text" name="skype" placeholder="https://join.skype.com/invite/lkHRXa57AsaL">
+		<input type="text" name="email" placeholder="harchenko0512@gmail.com">
+	</form>
+</section>
+<section class="experience" id="experience">
+	<img src="../img/icon1.gif" class="rounded mx-auto d-block">
+	<p>Расскажите о своем опыте</p>
+	<form action="">
+		<div class="experience-item">
+			<input type="checkbox" id="b" checked> БЭМ<br>
+			<input type="checkbox" checked> Sass<br>
+			<input type="checkbox"> SVG
+		</div>
+		<div class="experience-item">
+			<input type="checkbox" checked> Верстаю семинтично<br>
+			<input type="checkbox" checked> ES2015/ES2016<br>
+			<input type="checkbox" checked> Gulp
+		</div>
+		<div class="experience-item ">
+			<input type="checkbox"> Webpack<br>
+			<input type="checkbox" checked> jQuery<br>
+			<input type="checkbox" checked> Git
+		</div>
+	</form>
+</section>
+<section class="about" id="about">
+	<img src="../img/icon2.gif" class="rounded mx-auto d-block">
+	<p>Расскажите о себе</p>
+	<textarea name="" id="" cols="30" rows="5" placeholder="Понравилось тем, что компатия предлагает возможность развития в ходе работы над реальным проэктом,комфортные условия труда"></textarea><br>
+	<button type="submit">Готово</button>
+</section>
+	
+<footer>
+
+</footer>
+
+	<script src="common.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
