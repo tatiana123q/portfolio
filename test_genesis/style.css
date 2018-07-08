@@ -1,0 +1,140 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: 'Open Sans Regular';
+}
+.wrapper{
+	display: flex;
+}
+.main-foto{
+	background-image: url(img/bgr.gif);
+	background-size: cover;
+	width: 60%;
+	height: 100%;
+	position: relative;
+}
+.main-foto_percent1, .main-foto_percent2{
+	opacity: 0;
+	position: absolute;
+    width: 100%;
+    height: 81%;
+    vertical-align: middle;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    background-color: #ddb361a1;
+    transition-duration: 0.7s;
+}
+.main-foto_percent1 :first-child, .main-foto_percent2 :first-child{
+	font-size: 95px;
+	font-weight: bold;
+}
+.main-foto_percent1 :last-child, .main-foto_percent2 :last-child{
+	font-size: 21px;
+	font-weight: bold;
+}
+.main-foto_nav{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #d0cdc9cc;
+}
+.main-foto nav ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.main-foto nav ul li{
+	list-style-type: none;
+	margin: 5px 10px;
+	font-size: 9px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	margin: 5px auto;
+}
+.main-line{
+	width: 7px;
+	height: 100%;
+	background-color: #fcc150;
+	position: relative;
+}
+.fa-heart{
+	position: absolute;
+	color: #fcc150;
+	background-color: white;
+	border: 5px solid #fcc150;
+	border-radius: 50px;
+	padding: 5px;
+	top: 35%;
+	left: -240%;
+	font-size: 20px;
+}
+.main-inf{
+	width: 50%;
+}
+.main-inf_color{
+	height: 25%;
+	width: 100%;
+	background-color: #fcc150;
+}
+.main-inf_content{
+	height: 75%;
+	width: 100%;
+	background-color: #f6f5f5;
+}
+.main-inf_content p{
+	color: #fcc150;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 60px 38px;
+}
+.main-inf_buttons{
+	padding: 0 38px;
+}
+.main-inf_buttons img{
+	width: 18px;
+}
+.main-inf_buttons div{
+	font-size: 16px;
+	padding: 8px 38px;
+	width: 150px;
+	background-color: white;
+	border: 1px solid #d3d3d3;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+}
+input[name=man]:checked + div{
+	background-color: #fcc150;
+	color: white;
+}
+input[name=man]:checked + div>img{
+	display: none;
+}
+label:first-child input[name=man]:checked + div:before{
+	content: url(img/man-w.gif);
+}
+label:last-child input[name=man]:checked + div:before{
+	content: url(img/girl-w.gif);
+}
+.main-inf_content_next{
+	opacity: 0;
+	transition-duration: 0.5s;
+	margin: 40px 85px;
+	background-color: #fcc150;
+	padding: 10px 25px;
+	border: none;
+	border-radius: 5px;
+}
+.main-inf_content_next a{
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+
+

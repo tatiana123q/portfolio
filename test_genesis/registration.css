@@ -1,0 +1,141 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: 'Open Sans Regular';
+}
+.wrapper{
+	display: flex;
+}
+.registration-foto{
+	background-image: url(img/bgr2.gif);
+	background-size: cover;
+	width: 60%;
+	height: 100%;
+	position: relative;
+}
+.registration-foto_nav{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #d0cdc9cc;
+}
+.registration-foto nav ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.registration-foto nav ul li{
+	list-style-type: none;
+	margin: 5px 10px;
+	font-size: 9px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	margin: 5px auto;
+}
+.registration-line{
+	width: 7px;
+	height: 100%;
+	background-color: #1da7c0;
+	position: relative;
+}
+.registration-line .fa-heart{
+	position: absolute;
+	color: #1da7c0;
+	background-color: white;
+	border: 5px solid #1da7c0;
+	border-radius: 50px;
+	padding: 5px;
+	top: 35%;
+	left: -240%;
+	font-size: 20px;
+}
+.registration-inf{
+	width: 50%;
+}
+.registration-inf_color{
+	height: 25%;
+	width: 100%;
+	background-color: #1da7c0;
+}
+.registration-inf_content{
+	height: 95%;
+	width: 100%;
+	background-color: #f6f5f5;
+}
+.registration-inf_content> p{
+	color: #1da7c0;
+	width: 270px;
+	text-transform: uppercase;
+	font-size: 17px;
+	font-weight: bold;
+	padding: 60px 38px 10px 38px;
+}
+
+
+.registration-inf_content_type{
+	padding: 0 38px;
+	display: flex;
+}
+.registration-inf_content_type img{
+	width: 18px;
+}
+.registration-inf_content_type div{
+	font-size: 14px;
+	padding: 8px 10px;
+	width: 100px;
+	background-color: white;
+	border: 1px solid #d3d3d3;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+	margin-right: 10px;
+}
+input[name=man_reg]:checked + div{
+	background-color: #1da7c0;
+	color: white;
+}
+input[name=man_reg]:checked + div>img{
+	display: none;
+}
+label:first-child input[name=man_reg]:checked + div:before{
+	content: url(img/man-w.gif);
+}
+label:last-child input[name=man_reg]:checked + div:before{
+	content: url(img/girl-w.gif);
+}
+form  p{
+	padding: 10px 0 4px 38px;
+	font-size: 14px;
+}
+form input{
+	margin-left: 38px;
+	padding: 10px 20px;
+	border: 1px solid #d3d3d3;
+	border-radius: 4px;
+	width: 255px;
+}
+input[name=name]:invalid{
+	border: 2px #e17776 solid;
+}
+input[name=mail]:invalid{
+	border: 2px #e17776 solid;
+}
+input[name=data]:invalid{
+	border: 2px #e17776 solid;
+}
+form button{
+	background-color: #1da7c0;
+	margin: 20px 38px;
+	border: none;
+	border-radius: 10px;
+	padding: 10px 20px;
+	color: white;
+	cursor: pointer;
+}
+
+
+
+

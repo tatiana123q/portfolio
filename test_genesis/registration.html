@@ -1,0 +1,70 @@
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<title>test</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 	<link rel="stylesheet" href="style.css" /> -->
+		<link rel="stylesheet" href="registration.css" />
+		<link rel="stylesheet" href="fonts.css" />
+		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+		<section class="registration-foto">
+			<div class="registration-foto_nav">
+				<nav>
+					<ul>
+						<li>Название1</li>
+						<li>Название2</li>
+						<li>Название3</li>
+						<li>название4</li>
+						<li>очень длинное название</li>
+					</ul>
+					<ul>
+						<li>очень очень длинное название</li>
+						<li>длинное название</li>
+						<li>длинное название</li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<div class="registration-line">
+			<i class="fa fa-heart" aria-hidden="true"></i>
+		</div>
+		<section class="registration-inf">
+			<div class="registration-inf_color"></div>
+			<div class="registration-inf_content">
+				<p>lorem ipsum dolor sit amer, concectetur adipisking elit, sed do eismor</p>
+				<form id="form" action="">
+					<p>Я ищу:</p>
+					<div class="registration-inf_content_type">
+						<label class="registration-inf_content_type_item">
+							<input required hidden type="radio" name="man_reg"/>
+							<div ><img src="img/man.gif" alt="picture"> Вариан А</div>
+						</label><br>
+						<label class="registration-inf_content_type_item">
+							<input required hidden type="radio" name="man_reg"/>
+							<div ><img src="img/girl.gif" alt="picture"> Вариант В</div>
+						</label>
+					</div>
+					<div class="registration-inf_content_privet-data">
+						<label class="registration-inf_content_privet-data_item">
+							<p>Ваше имя:</p>
+							<input required type="text" name="name" pattern="[а-яёА-ЯЁ]{3,40}"/>
+						</label><br>
+						<label class="registration-inf_content_privet-data_item">
+							<p>Email:</p>
+							<input required type="email" name="mail" pattern="{10,30}" />
+						</label>
+						<label class="registration-inf_content_privet-data_item">
+							<p>Придумайте пароль:</p>
+							<input required type="password" name="data" pattern="{6,40}"/>
+						</label>
+					</div>
+					<button type="submit" form="form" >Продолжить</button>
+				</form>
+			</div>
+		</section>
+		</div>
+		<script src="common.js"></script>
+	</body>
